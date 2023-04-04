@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+    <head>
+        <title>Inicio JS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Programas em JS">
+        <meta name="keywords" content="javascript, css, html, olá mundo">
+        <meta name="author" content="TryHard">
+        <meta name="robots" content="noindex, nofollow">
+
+        <style>
+            *{
+                margin-left: 30px;
+                margin-top: 30px;
+            }
+
+            body{
+                background-color: rgba(97, 97, 97, 0.342);
+            }
+    
+            h1{
+                color: royalblue;
+            }
+    
+            p{
+                color:rgb(0, 0, 0);
+            }
+    
+        </style>
+
+    </head>   
+
+    <body>
+        <h1>Início em JS</h1>
+        <p>Olá, mundo!</p>
+        <p>Iniciando uma nova jornada em javaScript.</p>
+        <p>Abaixo está algumas informaçẽs sobre o seu nome:</p>
+        
+        
+
+        <script>           
+            var nome = window.prompt('Então informe-nos o seu nome!')
+            
+            document.write(`Seja muito bem vindo, <strong>${nome}!</strong><br>`)
+            document.write(`1- Seu nome tem ${nome.length} letras! <br>`)            
+            document.write(`2- TUDO EM LETRAS MAIÚSCULAS:<strong>${nome.toUpperCase()}</strong> <br>`)
+            document.write(`3- tudo em letras minúsculas:<strong>${nome.toLowerCase()}</strong> <br>`)
+            document.write(`4- A primeira letra de seu nome é:<strong>${nome[0].toUpperCase()}</strong><br>`)
+            document.write(`5- A última letra de seu nome é:<strong>${nome.slice(-1).toUpperCase()}</strong><br>`)
+                
+        </script>
+
+    </body>
+
+</html>

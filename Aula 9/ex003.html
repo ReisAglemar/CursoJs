@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Introdução ao DOM</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        #caixa {
+            font-size: 20px;
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            text-align: center;
+            line-height: 200px;
+            position: relative;
+            left: 200px;
+            
+
+        }
+
+        #caixaArea{
+            width: 400px;
+            height: 200px;
+            border:1px solid black;
+            
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <header>
+        <h1> DOM </h1>
+        <p><strong>D</strong>ocument <strong>O</strong>bject <strong>M</strong>odel</p>
+    </header>
+
+    <main>
+        <div id="caixaArea">
+            <div id="caixa" onmouseenter="entrou()" onmouseout="saiu()" onclick="clicou()"> test</div>
+        </div>
+    </main>
+
+</body>
+
+<script>
+    var a = document.getElementById('caixa')
+
+    function entrou() {
+        a.innerText = 'entrou'
+        a.style.backgroundColor = 'red'
+    }
+
+    function saiu() {
+        a.innerText = 'saiu'
+        a.style.backgroundColor = 'blue'
+    }
+    function clicou() {
+        a.innerText = 'clicou'
+        a.style.backgroundColor = 'green'
+    }
+
+
+</script>
+
+</html>

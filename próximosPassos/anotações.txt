@@ -1,0 +1,10 @@
+
+
+1 - aprofundar em funções = arroy function, callback, iife, anonimas
+2 - aprofundar em array
+3 - aprender sobre objetos 
+4 - modularização de código
+5 - expressões regulares
+6 - JSON
+7 - AJAX
+8 - Node.js focado em server side
